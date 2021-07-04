@@ -26,7 +26,7 @@
 		<div class="post">
 			<h2>{post.title.slice(0, 20)}</h2>
 			<p>{post.body}</p>
-			<p class="link">Read More</p>
+			<p class="link"><a sveltekit:prefetch href={`/blog/${post.id}`}>Read More</a></p>
 		</div>
 	{/each}
 </div>
